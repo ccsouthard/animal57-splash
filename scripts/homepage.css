@@ -59,6 +59,9 @@ section.boxed.home-work {
 .home-work .carousel .carousel-desc {
     margin: 20px 0;
 }
+.home-work .carousel .carousel-desc p {
+    min-height: 56px;
+}
 
 .home-services {
     display: flex;

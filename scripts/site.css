@@ -18,7 +18,7 @@ body {
     font-family: 'Clear Sans', sans-serif;
     color: var(--color-off-white);
     font-weight: 300;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.4px;
     font-size: 16px;
 }
 
@@ -97,6 +97,14 @@ a {
 a:hover {
     color: var(--color-white);
     text-decoration: underline;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.color-primary {
+    color: var(--color-neon-blue);
 }
 
 /* Buttons */
