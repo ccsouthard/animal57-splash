@@ -290,6 +290,9 @@ a.logo:hover {
 #site-header {
     padding: 45px 0px;
 }
+#site-header .container {
+    position: relative;
+}
 #site-header .container:after {
     display: block;
     content: "";
@@ -314,6 +317,41 @@ a.logo:hover {
     font-size: 20px;
     margin-top: 4px;
     padding: 8px 10px;
+}
+
+#site-header .share-list {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 48px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.15s linear;
+}
+#site-header .share-list.share-visible {
+    height: 138px;
+}
+#site-header .share-list a {
+    display: block;
+    height: 16px;
+    width: 16px;
+    padding: 15px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+#site-header .share-list a:hover {
+    opacity: 1;
+}
+#site-header .share-list .share-facebook {
+    background-image: url("../assets/ico-share-facebook.svg");
+}
+#site-header .share-list .share-twitter {
+    background-image: url("../assets/ico-share-twitter.svg");
+}
+#site-header .share-list .share-gplus {
+    background-image: url("../assets/ico-share-gplus.svg");
 }
 
 #site-header nav {
@@ -407,12 +445,12 @@ a.logo:hover {
 @media (max-width: 1260px) {
     .container {
         width: auto;
-        padding: 0 40px;
+        margin: 0 40px;
     }
 }
 @media (max-width: 1080px) { /* smaller padding */
     .container {
-        padding: 0 30px;
+        margin: 0 30px;
     }
     section.inbetween,
     section.boxed {
@@ -456,7 +494,7 @@ a.logo:hover {
 }
 @media (max-width: 690px) { /* smallest font size and padding */
     .container {
-        padding: 0 20px;
+        margin: 0 20px;
     }
     section.inbetween,
     section.boxed {
@@ -489,6 +527,9 @@ a.logo:hover {
     #site-header {
         background-color: var(--color-dark-purple);
         padding: 0;
+    }
+    #site-header .share-list {
+        background-color: var(--color-dark-purple);
     }
     #site-header .nav-toggle {
         display: inline-block;
